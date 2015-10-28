@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Bad+Script&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Bad+Script|Comfortaa|Marck+Script&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic);
+
+.quote-in-text
+{
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    margin: 5px;
+}
+
+h3.quote-in-text
+{
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    -moz-column-span: all;
+    column-span: all;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+}
+
+.quote
+{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+article{
+    font-family: 'Neucha', cursive;
+    padding: 5px;
+    hyphens: auto;
+}
+
+h1
+{
+    font-size: 50px;
+    font-family: 'Bad Script', cursive;
+}
+
+h3
+{
+    font-family: 'Bad Script', cursive;
+    font-size: 25px;
+}
+
+h5
+{
+    font-family: 'Marck Script', cursive;
+}
+
+.page-footer
+{
+    text-align: center;
+    font-family: 'Neucha', cursive;
+}
+
+[name="way-to-travel"] em
+{
+    font-size: 1em;
+    font-family: 'Lobster', cursive;
+}
+
+[itemprop="description"]::first-letter,
+[name="future-is-now"] p::first-letter,
+[name="paradoxes"] p::first-letter,
+[name="way-to-travel"] p::first-letter,
+.quote p::first-letter
+{
+    font-size: 2.5rem;
+}
+
+h1,
+h3,
+h4,
+h5,
+.center
+{
+    text-align: center;
+}
+
+.left-header,
+.middle-header,
+.right-header
+{
+    float: left;
+    margin-bottom: 5px;
+}
+
+.left-header
+{
+    width: 20%;
+    border: 1px solid #111;
+    margin: 40px auto auto 20px;
+    padding: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    font-family: 'Neucha', cursive;
+}
+
+.middle-header
+{
+    width: 50%;
+    text-align: center;
+}
+
+.bold
+{
+    font-weight: 900;
+}
+
+article
+{
+    -webkit-column-rule: 1px solid #111;
+    -moz-column-rule: 1px solid #111;
+    column-rule: 1px solid #111;
+    border: 1px solid #111;
+    text-indent: 15px;
+}
+
+article[name="paradoxes"]
+{
+    -webkit-column-count: 3;
+    -webkit-column-width: 200px;
+    -webkit-column-gap: 5px;
+}
+
+article[name="future-is-now"],
+article[name="grandma"],
+article[name="way-to-travel"],
+article.quote
+{
+    -webkit-column-count: 1;
+    margin: 1px auto;
+}
+
+[name="future-is-now"],
+[itemprop="description"],
+[name="grandma"]  p
+{
+    font-size: 16.5px;
+}
+
+.first-column
+{
+    float:left;
+    width: 20%;
+    margin-right: 3px;
+}
+
+.second-column
+{
+    float:left;
+    width: 59%;
+}
+
+.third-column
+{
+    float: left;
+    width: 20%;
+    margin-left: 3px;
+
+}
+
+figure
+{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+img
+{
+    display: block;
+    margin: auto;
+}
+
+
+hgroup
+{
+    display: block;
+    margin: 0 auto 10px;
+    width: 30%;
+}
+
+li{
+    text-align: left;
+    text-indent: 0;
+    padding: 4px;
+}
+
+
+main
+{
+    padding: 3px;
+    margin: 3px;
+}
+
+.spoiler
+{
+    color: red;
+}
+
+#femto
+{
+    text-decoration: underline;
+}
