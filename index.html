@@ -4,16 +4,40 @@
         <meta charset="utf-8">
         <title>DeLorean DMC-12</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="fontstyle.css">
     </head>
     <body>
+        Размер шрифта:
+        <input id="font-size-filter" class="font-size-filter" name="font-size-filter"
+               type="radio" value="big"> большой
+        <input class="font-size-filter" name="font-size-filter"
+               type="radio" value="normal" checked> нормальный
+        <input class="font-size-filter" name="font-size-filter" type="radio" value="small"> маленький
+        <br>
+        Тип шрифта:
+        <input id="font-style-filter" class="font-style-filter" name="font-style-filter"
+               type="radio" value="neucha" checked> Марти
+        <input class="font-style-filter" name="font-style-filter"
+               type="radio" value="allodswest"> Док
+        <br>
+        Стиль газеты:
+        <input id="newspaper-style-filter" class="newspaper-style-filter"
+               name="newspaper-style-filter" type="radio" value="white" checked> светлый
+        <input class="newspaper-style-filter" name="newspaper-style-filter"
+               type="radio" value="black"> темный
+        <br>
+
         <header class="main-header">
+            <div class="more-left-header">
+                <p class="vertical-text">Вторник&nbsp;четверг</p>
+            </div>
             <div class="left-header">
                 <span class="bold">Выпуск:</span> №713<br>
                 <span class="bold">Тираж:</span> 2000<br>
                 <span class="bold">Рекомендуема цена:</span> 3 галлеона<br>
-                <span class="bold">Издается</span> с <time>2002</time> года<br>
+                <span class="bold">Издается</span> с <time datetime="2002">2002</time> года<br>
                 Четверг,
-                <time>29 октября, 2015</time>
+                <time datetime="2015-10-29">29 октября, 2015</time>
             </div>
             <div class="middle-header">
                 <h1>Спецвыпуск: Назад в будущее</h1>
@@ -26,7 +50,7 @@
             <section>
                 <div class="first-column">
                     <article name="future-is-now">
-                        <header><h3>Будущее уже сегодня.</h3></header>
+                        <h3>Будущее уже сегодня.</h3>
                         <figure>
                             <img src="images/hovebord.jpg" alt="hovebord">
                             <figcaption>Lexus выпустил летающий скейтборд</figcaption>
@@ -52,7 +76,7 @@
                         </p>
                     </article>
                     <article name="grandma">
-                        <header><h3>Бабуленька советует:</h3></header>
+                        <h3>Бабуленька советует:</h3>
                         <div itemscope itemtype="http://schema.org/Book">
                             <img src="images/azimov.jpeg" itemprop="image" alt="book cover">
                             <p class="center">
@@ -62,7 +86,9 @@
                                     <abbr title=" International Standard Book Number">ISBN:</abbr>
                                 </em>
                                 <span itemprop="isbn">5-267-00124-4</span><br>
-                                <em>Год издания:</em> <time itemprop="datePublished">2000</time><br>
+                                <em>Год издания:</em>
+                                <time datetime="2000" itemprop="datePublished">2000</time>
+                                <br>
                                 <em>Издательство:</em> <span itemprop="publisher">Азбука</span><br>
                             </p>
                             <p itemprop="description">
@@ -112,14 +138,16 @@
                             </p>
                             <em>Бабуленька плохого не посоветует</em> ♥♥♥♥
                         </div>
-                        <img src="images/venzel.png" alt="venzel" alt="venzel">
+                        <img src="images/venzel.png" alt="venzel">
                         <div itemscope itemtype="http://schema.org/Book">
                             <img src="images/king.jpg" itemprop="image" alt="book cover">
                             <p class="center">
                                 <em>Автор:</em> <span itemprop="author">Стивен Кинг</span><br>
                                 <em>Название:</em> <span itemprop="name">11/22/63</span><br>
                                 <em>ISBN:</em> <span itemprop="isbn">978-5-17-078901-6</span><br>
-                                <em>Год издания:</em> <time itemprop="datePublished">2013</time><br>
+                                <em>Год издания:</em>
+                                <time datetime="2013" itemprop="datePublished">2013</time>
+                                <br>
                                 <em>Издательство:</em> <span itemprop="publisher">АСТ Москва</span><br>
                             </p>
                             <p itemprop="description">
@@ -458,7 +486,7 @@
                             за&nbsp;ча&shy;ем, вы прой&shy;де&shy;те мет&shy;ров 15 и
                             пе&shy;ре&shy;ме&shy;сти&shy;тес ь во&nbsp;вре&shy;ме&shy;ни в бу&shy;ду&shy;щее
                             на&nbsp;це&shy;лых
-                            <span id="femto" title="0,00000000000000015 секунд">0.15 фемтосекунд</span>!!!
+                            <span measure="femto" title="0,00000000000000015 секунд">0.15 фемтосекунд</span>!
                             <br>
                             Де&shy;ло&nbsp;в&nbsp;том, что со&shy;глас&shy;но тео&shy;рии
                             от&shy;но&shy;си&shy;тель&shy;но&shy;сти чем быст&shy;рее дви&shy;жет&shy;ся
@@ -574,7 +602,7 @@
             <div class="page-footer">
                 Адрес издательства:
                 <address>Тисовая улица, дом 4</address>
-                <time>2015</time>
+                <time datetime="2015">2015</time>
             </div>
         </footer>
     </body>

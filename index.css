@@ -1,51 +1,54 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Bad+Script&subset=cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Bad+Script|Comfortaa|Marck+Script&subset=cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic);
+h5,
+h3.quote-in-text,
+em
+{
+    font-family: 'sladkoeshka';
+    font-size: 0.9em;
+}
 
 .quote-in-text
 {
     font-family: 'Lobster', cursive;
-    font-size: 15px;
+    font-size: 0.7em;
     margin: 5px;
 }
 
 h3.quote-in-text
 {
-    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    -webkit-column-span: all;
     -moz-column-span: all;
     column-span: all;
-    font-family: 'Lobster', cursive;
-    font-family: 'Poiret One', cursive;
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 .quote
 {
     font-family: 'Lobster', cursive;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 article{
-    font-family: 'Neucha', cursive;
+    font-family: 'allodswest';
     padding: 5px;
     hyphens: auto;
+    -webkit-column-rule: 1px solid #111;
+    -moz-column-rule: 1px solid #111;
+    column-rule: 1px solid #111;
+    border: 1px solid #111;
+    text-indent: 15px;
 }
 
 h1
 {
-    font-size: 50px;
+    font-size: 55px;
     font-family: 'Bad Script', cursive;
 }
 
 h3
 {
-    font-family: 'Bad Script', cursive;
-    font-size: 25px;
-}
-
-h5
-{
-    font-family: 'Marck Script', cursive;
+    font-family: 'scraps_cyrregular';
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .page-footer
@@ -66,7 +69,7 @@ h5
 [name="way-to-travel"] p::first-letter,
 .quote p::first-letter
 {
-    font-size: 2.5rem;
+    font-size: 2em;
 }
 
 h1,
@@ -78,6 +81,7 @@ h5,
     text-align: center;
 }
 
+.more-left-header,
 .left-header,
 .middle-header,
 .right-header
@@ -86,35 +90,39 @@ h5,
     margin-bottom: 5px;
 }
 
+.more-left-header
+{
+    width: 1%;
+}
+
 .left-header
 {
-    width: 20%;
+    width: 15%;
     border: 1px solid #111;
     margin: 40px auto auto 20px;
     padding: 10px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+    border-radius: 20px;
     font-family: 'Neucha', cursive;
 }
 
 .middle-header
 {
-    width: 50%;
+    width: 53%;
     text-align: center;
+}
+
+.vertical-text
+{
+    width: 3px;
+    font-size: 9px;
+    word-wrap: break-word;
+    font-family: 'Lobster', cursive;
+
 }
 
 .bold
 {
     font-weight: 900;
-}
-
-article
-{
-    -webkit-column-rule: 1px solid #111;
-    -moz-column-rule: 1px solid #111;
-    column-rule: 1px solid #111;
-    border: 1px solid #111;
-    text-indent: 15px;
 }
 
 article[name="paradoxes"]
@@ -137,7 +145,7 @@ article.quote
 [itemprop="description"],
 [name="grandma"]  p
 {
-    font-size: 16.5px;
+    font-size: 1em;
 }
 
 .first-column
@@ -145,6 +153,7 @@ article.quote
     float:left;
     width: 20%;
     margin-right: 3px;
+    height: 100%;
 }
 
 .second-column
@@ -174,7 +183,6 @@ img
     margin: auto;
 }
 
-
 hgroup
 {
     display: block;
@@ -188,7 +196,6 @@ li{
     padding: 4px;
 }
 
-
 main
 {
     padding: 3px;
@@ -197,10 +204,55 @@ main
 
 .spoiler
 {
-    color: red;
+    color: #f00;
 }
 
-#femto
+[measure="femto"]
 {
     text-decoration: underline;
+}
+
+main
+{
+    min-height: 2400px;
+}
+
+header
+{
+    min-height: 200px;
+}
+
+.font-style-filter[value="neucha"]:checked ~ main article:not(.quote)
+{
+    font-family: 'Neucha', cursive;
+}
+
+.newspaper-style-filter[value="black"]:checked ~ header,
+.newspaper-style-filter[value="black"]:checked ~ main,
+.newspaper-style-filter[value="black"]:checked ~ footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.newspaper-style-filter[value="black"]:checked ~ main article,
+.newspaper-style-filter[value="black"]:checked ~ header,
+.newspaper-style-filter[value="black"]:checked ~ header .left-header
+{
+    -webkit-column-rule-color: #fff;
+    border: 1px solid #fff;
+}
+
+.font-size-filter[value="big"]:checked ~ main
+{
+    font-size: 25px;
+}
+
+.font-size-filter[value="normal"]:checked ~ main
+{
+    font-size: 20px;
+}
+
+.font-size-filter[value="small"]:checked ~ main
+{
+    font-size: 15px;
 }
