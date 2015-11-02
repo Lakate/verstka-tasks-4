@@ -139,8 +139,15 @@ h5,
 article[name="paradoxes"]
 {
     -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
     -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
     -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+
 }
 
 article[name="future-is-now"],
@@ -149,6 +156,8 @@ article[name="way-to-travel"],
 article.quote
 {
     -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
     margin: 1px auto;
 }
 
